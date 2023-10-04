@@ -22,7 +22,8 @@ defmodule ExByteflow.MixProject do
   defp deps do
     [
       {:poison, "~> 5.0"},
-      {:req, "~> 0.4.0"}
+      {:req, "~> 0.4.0"},
+      {:nanoid, "~> 2.1.0"}
     ]
   end
 end
