@@ -32,4 +32,24 @@ defmodule ExByteflow.Api do
 
     get_url
   end
+
+  def lookup_number(phone_number) do
+    response =
+      Req.get!(@req,
+        url: "/lookupNumber",
+        params: [phone_number: phone_number, advanced_mode: false]
+      )
+
+    response.body
+  end
+
+  def lookup_number(phone_number, :advanced_mode) do
+    response =
+      Req.get!(@req,
+        url: "/lookupNumber",
+        params: [phone_number: phone_number, advanced_mode: true]
+      )
+
+    response.body
+  end
 end

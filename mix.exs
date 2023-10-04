@@ -21,6 +21,7 @@ defmodule ExByteflow.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:poison, "~> 5.0"},
       {:req, "~> 0.4.0"}
     ]
   end
