@@ -52,4 +52,10 @@ defmodule ExByteflow.Api do
 
     response.body
   end
+
+  def register_number(phone_number) do
+    response = Req.post!(@req, url: "/registerNumber", json: %{phone_number: phone_number})
+
+    response.body
+  end
 end
