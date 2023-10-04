@@ -26,3 +26,4 @@ ex_byteflow-*.tar
 /tmp/
 
 .elixir_ls
+.env
